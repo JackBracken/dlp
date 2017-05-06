@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$background: #000;
+$text-color: #93be91;
+$link-color: lighten($text-color, 10);
+$link-active-color: #38d238;
+$box-background: #0a1c0b;
+$body-background: #21301f;
+$subheader-background: darken($body-background, 5);
+$search-background: #010;
+$white: #fff;
+$red: #f00;
+$orange: #960;
+$black: #000;
+$navhighlight-background: lighten($box-background, 5);
+$useraccount-background: lighten($box-background, 3);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  color: $text-color;
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  margin-top: 55px;
+}
+
+a {
+  color: $link-color;
+  font-weight: bold;
+  &:hover {
+    color: $link-active-color;
+    cursor: pointer;
+  }
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+// .navbar {
+//   position: fixed;
+//   top: 0;
+//   box-shadow: 0 0 15px $black;
+//   box-sizing: border-box;
+//   width: 100%;
+//   background: $box-background;
+//   height: 55px;
+//   padding-left: 25px;
+//   padding-right: 25px;
+//   z-index: 100;
+//   a {
+//     font-weight: normal;
+//     font-size: 10pt;
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+//   ul {
+//     list-style-type: none;
+//     &.navigation {
+//       float: left;
+//     }
+//     &.userinfo {
+//       float: right;
+//     }
+//     li {
+//       line-height: 55px;
+//       display: block;
+//       float: left;
+//       padding-left: 15px;
+//       padding-right: 15px;
+//       text-transform: uppercase;
+//       letter-spacing: 2px;
+//       &:hover {
+//         background-color: $navhighlight-background;
+//       }
+//       &.useraccount {
+//         background-color: $useraccount-background;
+//         img {
+//           height: 45px;
+//           border-radius: 25px;
+//           float: left;
+//           margin-top: 5px;
+//           margin-right: 15px;
+//         }
+//         i {
+//           margin-left: 5px;
+//         }
+//       }
+//       &.search {
+//         width: 200px;
+//         background: $search-background;
+//         input {
+//           background: none;
+//           border: none;
+//           width: 75%;
+//           color: $text-color;
+//         }
+//         i {
+//           line-height: 55px;
+//           float: right;
+//         }
+//       }
+//       &.donate {
+//         background: $orange;
+//         color: $white;
+//         &:hover {
+//           background: #a70;
+//         }
+//       }
+//       &.logo {
+//         background: inherit;
+//         font-weight: bold;
+//       }
+//       &.messages {
+//         i {
+//           line-height: 55px;
+//           float: left;
+//           margin-left: 7px;
+//         }
+//         span.inboxlabel {
+//           margin-top: 10px;
+//           margin-left: -10px;
+//           float: left;
+//           display: block;
+//           width: 15px;
+//           height: 15px;
+//           background: $red;
+//           color: $white;
+//           font-size: 6pt;
+//           border-radius: 10px;
+//           line-height: 15px;
+//           text-align: center;
+//           letter-spacing: 0px;
+//         }
+//       }
+//       &.announcements {
+//         i {
+//           line-height: 55px;
+//           float: left;
+//           margin-left: 7px;
+//         }
+//         span.noticeslabel {
+//           margin-top: 10px;
+//           margin-left: -10px;
+//           float: left;
+//           display: block;
+//           width: 15px;
+//           height: 15px;
+//           background: $red;
+//           color: $white;
+//           font-size: 6pt;
+//           border-radius: 10px;
+//           line-height: 15px;
+//           text-align: center;
+//           letter-spacing: 0px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .advert,
+// .notices {
+//   width: 80%;
+//   margin: auto;
+// }
+
+// .advert {
+//   text-align: center;
+//   img {
+//     padding: 15px;
+//   }
+// }
+
+// .notices {
+//   width: 80%;
+//   margin: auto;
+//   margin-top: 25px;
+//   .notice-item {
+//     margin-bottom: 10px;
+//     padding: 10px;
+//     background: $body-background;
+//     border: 1px solid $text-color;
+//   }
+//   i {
+//     float: right;
+//   }
+//   p {
+//     margin-bottom: 12px;
+//   }
+// }
+
+// .banner {
+//   width: 85%;
+//   margin: auto;
+//   margin-top: 50px;
+//   margin-bottom: 50px;
+// }
+
+.pageWidth {
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 85%;
+}
+
+.nodeList .categoryNodeInfo .nodeTitle {
+  margin-top: 35px;
+  font-size: 1.4em;
+  padding: 15px;
+  background: $box-background;
+  letter-spacing: 5px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $text-color;
+  }
+}
+
+// 50   Name (viewing)
+//      Description
+// 10   # Threads
+// 10   # Posts
+// 30   Last Post
+
+.nodeList .forumMetaFields {
+  background: $subheader-background;
+  display: table;
+  width: 100%;
+
+  .label {
+    padding: 10px;
+    display: table-cell;
+    font-weight: bold;
+  }
+
+  .forum {
+    width: 50%;
+  }
+  .threads,
+  .posts {
+    text-align: center;
+    width: 10%;
+  }
+  .lastPost {
+    width: 30%;
+  }
+}
+
+.nodeList .node.forum {
+  background: $body-background;
+  color: $text-color;
+}
+
+.forumNodeInfo {
+  a {
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  display: table;
+  width: 100%;
+  .nodeText,
+  .nodeThreads,
+  .nodePosts,
+  .nodeLastPost {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+  }
+
+  .nodeText {
+    width: 50%;
+    .nodeTitle a {
+      font-size: .9em;
+      line-height: 1em;
+    }
+    .nodeDescription {
+
+    }
+  }
+
+  .nodeThreads,
+  .nodePosts {
+    font-size: 1.25em;
+    text-align: center;
+    width: 10%;
+  }
+
+  .nodeLastPost {
+    width: 30%;
+  }
+}
+// .board {
+//   width: 85%;
+//   margin: auto;
+//   margin-top: 35px;
+//   background: $body-background;
+//   border-spacing: 0;
+//   .board-header {
+//     display: table-cell;
+//     background: $box-background;
+//     font-size: 16pt;
+//     padding: 15px;
+//     font-weight: bold;
+//     letter-spacing: 5px;
+//     text-transform: uppercase;
+//     i {
+//       float: right;
+//     }
+//   }
+//   .board-row {
+//     padding: 0;
+//     .board-cell {
+//       vertical-align: middle;
+//       padding: 10px;
+//       a {
+//         letter-spacing: 1px;
+//         margin-right: 10px;
+//       }
+//       &.description {
+//         width: 50%;
+//         text-align: left;
+//       }
+//       &.threads {
+//         width: 10%;
+//         text-align: center;
+//         vertical-align: center;
+//         font-size: 16pt;
+//       }
+//       &.posts {
+//         width: 10%;
+//         text-align: center;
+//         font-size: 16pt;
+//       }
+//       &.lastpost {
+//         width: 30%;
+//         text-align: left;
+//       }
+//       &.th {
+//         background: $subheader-background;
+//         font-weight: bold;
+//         font-size: 12pt;
+//       }
+//     }
+//   }
+// }

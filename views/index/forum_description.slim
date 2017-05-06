@@ -1,0 +1,19 @@
+li.node.forum.level_2
+  .nodeInfo.forumNodeInfo.primaryContent.unread
+    .nodeText
+      h3.nodeTitle
+        a href='#' = name
+
+      blockquote.nodeDescription = description
+    .nodeThreads = discussions
+    .nodePosts = messages
+
+    .nodeLastPost.secondaryContent
+      .lastThreadTitle
+        a href='#' title="#{latest}" = latest
+
+      .lastThreadMeta
+        span.lastThreadUser
+          ' by
+          a.username dir='auto' href='/user_profile' = poster
+        .DateTime.muted.lastThreadDate title="#{date} at #{time}" = date

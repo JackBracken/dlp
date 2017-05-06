@@ -1,0 +1,41 @@
+doctype html
+html#XenForo.Public.NoJs.LoggedOut.Sidebar.RunDeferred.Responsive dir="LTR" lang="en-US"
+  head
+    meta charset="utf-8"
+    meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    meta content="A Harry Potter Fanfiction forum." name="description"
+
+    link rel="stylesheet" type="text/css" href="stylesheets/normalize.min.css"
+    link rel="stylesheet" type="text/css" href="stylesheets/styles.css"
+
+    title DLP Modern Design Beta
+
+  body
+    #loginBar
+      .pageWidth
+        .pageContent
+          h3#loginBarHandle
+            label for='LoginControl'
+              a.concealed.noOutline href='login/' Log in or Sign up
+          span.helper
+    #headerMover
+      #headerProxy
+      #content.forum_list
+        .pageWidth
+          .pageContent
+            /! main content area
+            .mainContainer
+              .mainContent
+                .breadBoxTop
+                  == slim :'globals/breadbox'
+                .titleBar
+                  h1 DLP Forums
+                == yield
+                == slim :'globals/login'
+            == slim :'globals/sidebar'
+            .breadBoxBottom
+              == slim :'globals/breadbox'
+
+      == slim :'globals/navigation'
+    == slim :'globals/footer'

@@ -1,0 +1,47 @@
+#searchBar.pageWidth
+  span#QuickSearchPlaceholder title='Search' Search
+  fieldset#QuickSearch
+    form.formPopup action='search/search' method='post'
+      .primaryControls
+        /! block: primaryControls
+        input#QuickSearchQuery.textCtrl name='keywords' placeholder='Search...' title='Enter your search and hit enter' type='search' value=''
+        /! end block: primaryControls
+      .secondaryControls
+        .controlsWrapper
+          /! block: secondaryControls
+          dl.ctrlUnit
+            dt
+            dd
+              ul
+                li
+                  label
+                    input#search_bar_title_only.AutoChecker data-uncheck='#search_bar_thread' name='title_only' type='checkbox' value='1' Search titles only
+          dl.ctrlUnit
+            dt
+              label for='searchBar_users' Posted by Member:
+            dd
+              input#searchBar_users.textCtrl.AutoComplete name='users' type='text' value=''
+              p.explain Separate names with a comma.
+          dl.ctrlUnit
+            dt
+              label for='searchBar_date' Newer Than:
+            dd
+              input#searchBar_date.textCtrl name='date' type='date' value=''
+        /! end block: secondaryControls
+        dl.ctrlUnit.submitUnit
+          dt
+          dd
+            input.button.primary.Tooltip title='Find Now' type='submit' value='Search'
+            #commonSearches.Popup
+              a.button.NoPopupGadget.Tooltip data-tipclass='flipped' rel='Menu' title='Useful Searches'
+                span.arrowWidget
+              .Menu
+                .primaryContent.menuHeader
+                  h3 Useful Searches
+                ul.secondaryContent.blockLinksList
+                  /! block: useful_searches
+                  li
+                    a href='find-new/posts?recent=1' rel='nofollow' Recent Posts
+                  /! end block: useful_searches
+            a.button.moreOptions.Tooltip href='search/' title='Advanced Search' More...
+      input name='_xfToken' type='hidden' value=''

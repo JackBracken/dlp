@@ -1,0 +1,11 @@
+ol#forums.nodeList.sectionMain
+  - $index.each_with_index do |group, index|
+    li.node.category.level_1
+      .nodeInfo.categoryNodeInfo.categoryStrip
+        .categoryText
+          h3.nodeTitle
+            a href='#' = group[:name]
+      ol.nodeList
+        == slim :'index/forum_meta_fields'
+        - group[:subs].each do |sub|
+         == slim  :'index/forum_description', locals: sub

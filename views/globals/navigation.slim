@@ -1,0 +1,60 @@
+header
+  #header
+    #logoBlock
+      .pageWidth
+        .pageContent
+          #logo
+            a href='http://forumsdev.darklordpotter.net'
+              span
+              img alt='DLP Forums' src=''
+          span.helper
+    #navigation.pageWidth.withSearch
+      .pageContent
+        nav
+          .navTabs
+            ul.publicTabs
+              /! home
+              li.navTab.home.PopupClosed
+                a.navLink href='http://forumsdev.darklordpotter.net' Home
+              /! extra tabs: home
+              /! forums
+              li.navTab.forums.selected
+                a.navLink href='http://forumsdev.darklordpotter.net/' Forums
+                a.SplitCtrl href='http://forumsdev.darklordpotter.net/' rel='Menu'
+                .tabLinks.forumsTabLinks
+                  .primaryContent.menuHeader
+                    h3 Forums
+                    .muted Quick Links
+                  ul.secondaryContent.blockLinksList
+                    li
+                      a href='search/?type=post' Search Forums
+                    li
+                      a href='find-new/posts' rel='nofollow' Recent Posts
+              /! extra tabs: middle
+              /! members
+              li.navTab.members.Popup.PopupControl.PopupClosed
+                a.navLink href='http://forumsdev.darklordpotter.net/members/' Members
+                a.SplitCtrl href='http://forumsdev.darklordpotter.net/members/' rel='Menu'
+                .Menu.JsOnly.tabMenu.membersTabLinks
+                  .primaryContent.menuHeader
+                    h3 Members
+                    .muted Quick Links
+                  ul.secondaryContent.blockLinksList
+                    li
+                      a href='/members' Notable Members
+                    li
+                      a href='/online' Current Visitors
+                    li
+                      a href='/recent_activity' Recent Activity
+                    li
+                      a href='/find_new/profile_posts' New Profile Posts
+              /! extra tabs: end
+              /! responsive popup
+              li.navTab.navigationHiddenTabs.Popup.PopupControl.PopupClosed style='display:none'
+                a.navLink.NoPopupGadget rel='Menu'
+                  span.menuIcon Menu
+                #NavigationHiddenMenu.Menu.JsOnly.blockLinksList.primaryContent
+              /! no selection
+          span.helper
+
+    == slim :'globals/searchbar'
