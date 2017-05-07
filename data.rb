@@ -9,7 +9,8 @@ $index = [{
       latest: 'Clusterfuck of Suresh',
       poster: 'Suresh',
       date: 'Jan 24, 2017',
-      time: '10:19 PM'
+      time: '10:19 PM',
+      unread: true
     },
     {
       name: 'Announcements',
@@ -19,7 +20,8 @@ $index = [{
       latest: 'Best April Fools Post Competition',
       poster: 'Garden',
       date: 'Apr 3, 2017',
-      time: '6:25 PM'
+      time: '6:25 PM',
+      unread: false
     }
   ]
 }, {
@@ -33,7 +35,8 @@ $index = [{
       latest: 'Filter FFN author favorites by category',
       poster: 'draykfyre',
       date: 'Apr 22, 2017',
-      time: '6:25 AM'
+      time: '6:25 AM',
+      unread: true
     },
     {
       name: 'Real Life Discussion',
@@ -43,7 +46,8 @@ $index = [{
       latest: 'TOMD 4: The Tribraggart Tournament',
       poster: 'The Iron Rose',
       date: 'Apr 22, 2017',
-      time: '6:52 AM'
+      time: '6:52 AM',
+      unread: true
     },
     {
       name: 'Gaming and PC Discussion',
@@ -53,7 +57,8 @@ $index = [{
       latest: 'Persona 5 [PS4]',
       poster: 'Arthellion',
       date: 'Apr 22, 2017',
-      time: '6:40 AM'
+      time: '6:40 AM',
+      unread: false
     },
     {
       name: 'Multimedia',
@@ -63,7 +68,8 @@ $index = [{
       latest: 'Wheel of Time TV',
       poster: 'Arthellion',
       date: 'Apr 22, 2017',
-      time: '7:13 AM'
+      time: '7:13 AM',
+      unread: false
     },
     {
       name: 'Politics',
@@ -73,7 +79,8 @@ $index = [{
       latest: 'Political Compass, 2017 Edition',
       poster: 'Arthellion',
       date: 'Apr 22, 2017',
-      time: '7:09 AM'
+      time: '7:09 AM',
+      unread: false
     },
     {
       name: 'Bookclub',
@@ -83,7 +90,8 @@ $index = [{
       latest: 'Week 24: Deathly Hallows, Ch. 16 - 22',
       poster: 'Shinysavage',
       date: 'Apr 28, 2017',
-      time: '1:55 PM'
+      time: '1:55 PM',
+      unread: true
     }
   ]
 }, {
@@ -97,7 +105,8 @@ $index = [{
       latest: 'Iphone Messaging Problem',
       poster: 'Sacro',
       date: 'Apr 17, 2017',
-      time: '4:20 AM'
+      time: '4:20 AM',
+      unread: false
     },
     {
       name: 'Site Related Support',
@@ -107,7 +116,8 @@ $index = [{
       latest: 'Official Name Change Request Thread',
       poster: 'Vayle',
       date: 'Apr 17, 2017',
-      time: '5:14 PM'
+      time: '5:14 PM',
+      unread: false
     }
   ]
 }, {
@@ -121,7 +131,8 @@ $index = [{
       latest: 'The many Deaths of Harry Potter by ShayneT - T',
       poster: 'Methos',
       date: 'Apr 21, 2017',
-      time: '8:13 AM'
+      time: '8:13 AM',
+      unread: false
     },
     {
       name: 'Almost Recommended',
@@ -131,7 +142,8 @@ $index = [{
       latest: 'To Be Loved by Silentclock',
       poster: 'silentclock',
       date: 'Apr 19, 2017',
-      time: '9:44 PM'
+      time: '9:44 PM',
+      unread: false
     },
     {
       name: 'General Fics',
@@ -141,7 +153,8 @@ $index = [{
       latest: 'Contractual Invalidation by R-dude (Republic) - T',
       poster: 'Nevermind',
       date: 'Apr 15, 2017',
-      time: '11:00 AM'
+      time: '11:00 AM',
+      unread: false
     },
     {
       name: 'Humor',
@@ -151,7 +164,8 @@ $index = [{
       latest: 'Whatever Happened to Bromance? by vlad the inhaler - M',
       poster: 'Rilianus',
       date: 'Dec 14, 2016',
-      time: '6:45 PM'
+      time: '6:45 PM',
+      unread: false
     },
     {
       name: 'The Alternates',
@@ -161,7 +175,8 @@ $index = [{
       latest: 'The Changeling by Annerb - T',
       poster: 'kinetique',
       date: 'Apr 22, 2017',
-      time: '2:42 PM'
+      time: '2:42 PM',
+      unread: false
     },
     {
       name: 'Dark Arts',
@@ -171,7 +186,8 @@ $index = [{
       latest: 'Harry Potter and the Accidental Horcrux by the Imaginizer - T',
       poster: 'Peter North',
       date: 'Apr 17, 2017',
-      time: '11:01 AM'
+      time: '11:01 AM',
+      unread: true
     },
     {
       name: 'Romance',
@@ -181,7 +197,8 @@ $index = [{
       latest: 'Harry Potter and the Halfblood Auror by Chelseyb1010 - T',
       poster: 'Socialist',
       date: 'Apr 18, 2017',
-      time: '9:18 AM'
+      time: '9:18 AM',
+      unread: true
     },
     {
       name: 'Restricted Section',
@@ -191,7 +208,8 @@ $index = [{
       latest: 'Forever Knight by DeliverMeFromMe - NC17',
       poster: 'Zafar',
       date: 'Jan 3, 2017',
-      time: '12:13 PM'
+      time: '12:13 PM',
+      unread: false
     },
     {
       name: 'Other Fandoms',
@@ -202,7 +220,8 @@ $index = [{
       latest: 'Mother of Learning by nobody103 - T - Original Fantasy',
       poster: 'Lion',
       date: 'Apr 21, 2017',
-      time: '4:40 PM'
+      time: '4:40 PM',
+      unread: false
     }
   ]
 }, {
@@ -216,7 +235,8 @@ $index = [{
       latest: "Story Searches that don't require their own Threads - II",
       poster: 'Atram Noctem',
       date: 'Apr 22, 2017',
-      time: '11:19 AM'
+      time: '11:19 AM',
+      unread: true
     },
     {
       name: 'Other Fandoms',
@@ -226,7 +246,8 @@ $index = [{
       latest: 'Almost Recommendable Worm Fanfiction',
       poster: 'Rhys',
       date: 'Apr 21, 2017',
-      time: '5:11 AM'
+      time: '5:11 AM',
+      unread: true
     },
     {
       name: 'Original Fiction Discussion',
@@ -236,7 +257,8 @@ $index = [{
       latest: 'What original fiction are you writing?',
       poster: 'Paladin',
       date: 'Mat 5, 2017',
-      time: '1:46 AM'
+      time: '1:46 AM',
+      unread: false
     }
   ]
 }, {
@@ -250,7 +272,8 @@ $index = [{
       latest: 'Timeline for Weaver Inc (potential spoilers inside) - Worm',
       poster: 'Anarchy',
       date: 'Jan 30, 2017',
-      time: '9:21 PM'
+      time: '9:21 PM',
+      unread: true
     },
     {
       name: 'Story Showcase',
@@ -260,7 +283,8 @@ $index = [{
       latest: 'Last Enemy to be Destroyed - by Nauro',
       poster: 'Infidel',
       date: 'Mar 28, 2013',
-      time: '11:02 PM'
+      time: '11:02 PM',
+      unread: false
     },
     {
       name: 'Harry Potter Work by Author',
@@ -270,7 +294,8 @@ $index = [{
       latest: 'Ascended Vices',
       poster: 'ScottPress',
       date: 'May 5, 2017',
-      time: '12:16 AM'
+      time: '12:16 AM',
+      unread: false
     },
     {
       name: 'Dresden Work by Author',
@@ -280,7 +305,8 @@ $index = [{
       latest: 'Fight or Flight - R',
       poster: 'Zeelfail',
       date: 'May 3, 2017',
-      time: '11: 21 AM'
+      time: '11: 21 AM',
+      unread: false
     },
     {
       name: 'Original Fiction Work By Author',
@@ -290,7 +316,8 @@ $index = [{
       latest: 'A God Among Us - Short Story',
       poster: 'Guest000',
       date: 'Apr 24, 2017',
-      time: '4: 24 PM'
+      time: '4: 24 PM',
+      unread: false
     }
   ]
 }, {
@@ -304,7 +331,8 @@ $index = [{
       latest: 'Witch Hunt #8',
       poster: 'Fable',
       date: 'May 6, 2017',
-      time: '69: 420 NICE'
+      time: '69: 420 NICE',
+      unread: false
     }
   ]
 }]
