@@ -1,2 +1,4 @@
 .sass-cache/
 js/vendor/
+*.lock
+*.pid*
