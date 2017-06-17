@@ -1,3 +1,5 @@
+require 'sinatra'
+require 'better_errors'
 require_relative 'data.rb'
 
 configure :development do
@@ -7,6 +9,10 @@ end
 
 get '/' do
   slim :'index/index'
+end
+
+get '/thread' do
+  slim :'thread/index'
 end
 
 get '/user_profile' do
